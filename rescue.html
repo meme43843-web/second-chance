@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rescue Stories</title>   
+  
+  <link rel="stylesheet" href="rescue.css">
+  
+
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+   <a class="active" href="rescue.html">Rescue Stories</a>
+   <a href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<div class="back-home">
+  <a href="index.html">← Back to Home</a>
+</div>
+
+<main class="rescue-container">
+
+  <h1>Rescue Stories</h1>
+  <p class="subtitle">Every animal deserves a second chance </p>
+
+  <div class="controls">
+    <select id="typeFilter" onchange="filterPets()">
+      <option value="all">All Animals</option>
+      <option value="dog">Dogs</option>
+      <option value="cat">Cats</option>
+      <option value="bird">Birds</option>
+      <option value="hamster">Hamster</option>
+      <option value="rabbit">Rabbits</option>
+      <option value="turtle">Turtles</option>
+    </select>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by name or type..."
+      onkeyup="searchPets()"
+    >
+  </div>
+
+  <div id="petsGrid" class="pets-grid"></div>
+  <div id="pagination" class="pagination"></div>
+  <div id="pagination" class="pagination"></div>
+
+<div class="find-pet-container">
+  <button class="find-pet-btn" onclick="goToSmartSystem()">
+  Click to find your pet!
+</button>
+</div>
+
+
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    <p>Follow Us</p>
+    <p>
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="mailto:hello@secondchance.com">Email</a>
+    </p>
+  </div>
+
+</div>
+
+  <div class="footer-right">
+    <p> © Project Second Chance</p>
+  </div>
+</footer>
+
+<script src="rescue.js"></script>
+<script>
+  function goToSmartSystem() {
+    window.location.href = "smart.html";
+  }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+

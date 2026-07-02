@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Story | Second Chance</title>
+    <link rel="stylesheet" href="pet-story.css">
+    </head>
+
+<body>
+
+<div id="loginModal" class="modal">
+  <div class="modal-box">
+    <h2>Login Required</h2>
+    <p>Please create an account or login to continue.</p>
+
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+
+    <button onclick="login()">Login</button>
+    <button class="close" onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+   <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+      <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="#">Saved Pets</a>
+          <a href="#">Adoption Requests</a>
+          <a href="#">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+     </nav>
+</header>
+<main class="story-page container">
+
+  <div class="back-btn">
+    <a href="rescue.html">← Back</a>  
+  </div>  

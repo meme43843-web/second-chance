@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Second Chance</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="floating">
+
+  <svg class="shape heart" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-7.35C-1 9 3 3 8 6c2 1 4 3 4 3s2-2 4-3c5-3 9 3 5 7.65C18 16.65 12 21 12 21z"/>
+  </svg>
+
+  <svg class="shape paw" viewBox="0 0 24 24">
+    <circle cx="6" cy="8" r="2"/>
+    <circle cx="12" cy="6" r="2"/>
+    <circle cx="18" cy="8" r="2"/>
+    <ellipse cx="12" cy="14" rx="6" ry="4"/>
+  </svg>
+
+  <svg class="shape heart small" viewBox="0 0 24 24">
+    <path d="M12 21s-6-4.35-9-7.35C-1 9 3 3 8 6c2 1 4 3 4 3s2-2 4-3c5-3 9 3 5 7.65C18 16.65 12 21 12 21z"/>
+  </svg>
+
+</div>
+
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+    <a class="active" href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<section class="hero fade">
+
+  <div class="hero-left">
+
+    <div class="badge">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 21s-6-4.35-9-7.35C-1 9 3 3 8 6c2 1 4 3 4 3s2-2 4-3c5-3 9 3 5 7.65C18 16.65 12 21 12 21z"/>
+      </svg>
+      Every Life Matters
+    </div>
+
+    <h1>
+      Every Rescue<br>
+      Deserves a<br>
+      <span>Second Chance</span>
+    </h1>
+
+    <p>
+      We believe in second chances,
+      happy endings, and new beginnings.
+    </p>
+
+  </div>
+
+  <div class="hero-img">
+    <img src="gp].png">
+  </div>
+
+</section>
+
+
+<section class="pets">
+
+  <div class="section-head fade">
+    <span>REAL STORIES • REAL IMPACT</span>
+    <h2>Meet Our Rescued Heroes</h2>
+    <p>Each of them has a story of hope, love, and resilience.</p>
+  </div>
+
+  <div class="cards">
+
+<div class="card fade">
+
+  <div class="img-box">
+    <img src="pet.111.jpeg">
+  </div>
+
+  <div class="icon paw">
+  <svg viewBox="0 0 24 24">
+    <circle cx="6" cy="8" r="2"/>
+    <circle cx="12" cy="6" r="2"/>
+    <circle cx="18" cy="8" r="2"/>
+    <ellipse cx="12" cy="14" rx="6" ry="4"/>
+  </svg>
+</div>
+
+  <h3>Max</h3>
+  <p>From abandoned to adored</p>
+  <button onclick="openStory('max')">Read Max’s Story →</button>
+
+</div>
+
+
+
+<div class="card fade">
+
+  <div class="img-box">
+    <img src="pet2.jpg.png">
+  </div>
+
+<div class="icon heart">
+  <svg viewBox="0 0 24 24">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+</div>
+  <h3>Bella</h3>
+  <p>A gentle soul found her home</p>
+  <button onclick="openStory('bella')">Read Bella’s  Story →</button>
+
+</div>
+
+
+<div class="card fade">
+
+  <div class="img-box">
+    <img src="pet3.jpg.png">
+  </div>
+
+<div class="icon leaf">
+  <svg viewBox="0 0 24 24">
+    <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+  </svg>
+</div>
+  <h3>Thumper</h3>
+  <p>A tiny fighter with a big heart</p>
+  <button onclick="openStory('thumper')">Read Thumper’sStory →</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="adopt fade">
+  <div class="left">
+    <h2>
+      You Can Be Their <br>
+      <span>Happy Ending</span>
+    </h2>
+    <p>
+      Open your heart and home to a rescue in need.
+      <br>Change a life — forever.
+    </p>
+  </div>
+
+ 
+
+  <a href="rescue.html" class="adoption-btn-card">
+    <div class="circle">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 21s-6-4.35-9-7.35C-1 9 3 3 8 6c2 1 4 3 4 3s2-2 4-3c5-3 9 3 5 7.65C18 16.65 12 21 12 21z"/>
+      </svg>
+    </div>
+    <h3>Start Your Adoption Journey</h3>
+    <p>Find your new best friend today.</p>
+    <span class="arrow">→</span>
+  </a>
+
+</section>
+
+
+<footer class="footer">
+  <div class="footer-left">
+    <p>Follow Us</p>
+    <p>
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="mailto:hello@secondchance.com">Email</a>
+    </p>
+  </div>
+
+</div>
+
+  <div class="footer-right">
+    <p> © Project Second Chance</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+
+</script>
+</body>
+</html>
+
+
+
+

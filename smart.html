@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Second Chance</title>
+
+  <link rel="stylesheet" href="smart.css">
+  
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+     <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a class="active" href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+<div class="back-btn">
+    <a href="rescue.html">← Back </a>
+  </div>
+
+
+<div class="page">
+
+<h1 class="main-title">Discover Your Perfect Companion!</h1>
+<p class="subtitle">Answer honestly. This match is science-based.</p>
+
+<form id="adoptionForm" class="card">
+
+<div class="question"><label>1. Hours away from home daily?</label>
+<select required id="q1">
+<option value="">Choose...</option>
+<option value="low">Less than 4</option>
+<option value="mid">4–8 hours</option>
+<option value="high">More than 8</option>
+</select></div>
+
+<div class="question"><label>2. Living space?</label>
+<select required id="q2">
+<option value="">Choose...</option>
+<option value="small">Small apartment</option>
+<option value="medium">Apartment</option>
+<option value="large">House with yard</option>
+</select></div>
+
+<div class="question"><label>3. Energy level?</label>
+<select required id="q3">
+<option value="">Choose...</option>
+<option value="low">Calm</option>
+<option value="medium">Balanced</option>
+<option value="high">Very active</option>
+</select></div>
+
+<div class="question"><label>4. Pet experience?</label>
+<select required id="q4">
+<option value="">Choose...</option>
+<option value="new">First time</option>
+<option value="some">Some experience</option>
+<option value="expert">Very experienced</option>
+</select></div>
+
+<div class="question"><label>5. Children at home?</label>
+<select required id="q5">
+<option value="">Choose...</option>
+<option value="none">No</option>
+<option value="young">Under 7</option>
+<option value="older">Over 7</option>
+</select></div>
+
+<div class="question"><label>6. Training time available?</label>
+<select required id="q6">
+<option value="">Choose...</option>
+<option value="low">Very little</option>
+<option value="medium">Some</option>
+<option value="high">A lot</option>
+</select></div>
+
+<div class="question"><label>7. Grooming tolerance?</label>
+<select required id="q7">
+<option value="">Choose...</option>
+<option value="low">Minimal</option>
+<option value="medium">Regular</option>
+<option value="high">High maintenance ok</option>
+</select></div>
+
+<div class="question"><label>8. Noise tolerance?</label>
+<select required id="q8">
+<option value="">Choose...</option>
+<option value="low">Prefer quiet</option>
+<option value="medium">Some noise ok</option>
+<option value="high">Noise doesn’t bother me</option>
+</select></div>
+
+<div class="question"><label>9. Outdoor activity?</label>
+<select required id="q9">
+<option value="">Choose...</option>
+<option value="low">Rare</option>
+<option value="medium">Sometimes</option>
+<option value="high">Daily</option>
+</select></div>
+
+<div class="question"><label>10. Other pets?</label>
+<select required id="q10">
+<option value="">Choose...</option>
+<option value="no">None</option>
+<option value="friendly">Yes (friendly)</option>
+<option value="multiple">Many pets</option>
+</select></div>
+
+<div class="question"><label>11. Night routine?</label>
+<select required id="q11">
+<option value="">Choose...</option>
+<option value="early">Early sleeper</option>
+<option value="normal">Normal</option>
+<option value="late">Late nights</option>
+</select></div>
+
+<div class="question"><label>12. Emotional support importance?</label>
+<select required id="q12">
+<option value="">Choose...</option>
+<option value="low">Not important</option>
+<option value="medium">Somewhat</option>
+<option value="high">Very important</option>
+</select></div>
+
+<div class="question"><label>13. Patience level?</label>
+<select required id="q13">
+<option value="">Choose...</option>
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+</select></div>
+
+<div class="question"><label>14. Veterinary commitment?</label>
+<select required id="q14">
+<option value="">Choose...</option>
+<option value="low">Limited</option>
+<option value="medium">Prepared</option>
+<option value="high">Fully committed</option>
+</select></div>
+
+<div class="question"><label>15. Preferred bond type?</label>
+<select required id="q15">
+<option value="">Choose...</option>
+<option value="independent">Independent</option>
+<option value="balanced">Balanced</option>
+<option value="attached">Very attached</option>
+</select></div>
+
+<button class="submit-btn">Analyze My Match!</button>
+
+</form>
+
+<div id="result" class="result"></div>
+
+</div>
+<footer class="footer">
+  <div class="footer-left">
+    <p>Follow Us</p>
+    <p>
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="mailto:hello@secondchance.com">Email</a>
+    </p>
+  </div>
+
+</div>
+
+  <div class="footer-right">
+    <p> © Project Second Chance</p>
+  </div>
+</footer>
+
+<script src="smart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

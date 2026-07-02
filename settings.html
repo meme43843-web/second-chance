@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Second Chance</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+   <header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+     <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="menu">
+                <a href="profile.html" class="item">
+                    <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5z"/></svg>
+                    My Profile
+                </a>
+                <a href="saved.html" class="item">
+                    <svg viewBox="0 0 24 24"><path d="M12 21s-6-4.35-9-7.5C-1 9 2 3 7 3c2.5 0 4 1.5 5 3 1-1.5 2.5-3 5-3 5 0 8 6 4 10.5C18 16.65 12 21 12 21z"/></svg>
+                    Saved Pets
+                </a>
+                <a href="Requests.html" class="item">
+                    <svg viewBox="0 0 24 24"><path d="M6 2h12v20H6z"/></svg>
+                    Adoption Requests
+                </a>
+                <div class="item active">
+                    <svg viewBox="0 0 24 24"><path d="M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+                    Settings
+                </div>
+                <a href="#" class="item logout" id="logoutBtn">Logout</a>
+            </div>
+
+            <div class="promo">
+                <h3>Every Paw<br>Deserves <span>Love</span></h3>
+                <p>Adopt a pet and make a life better today.</p>
+                <img src="ddoogglloovvee.jpeg" class="promo-img">
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="header-box fade">
+                <div>
+                    <h1>Settings</h1>
+                    <p>Manage your account preferences and settings.</p>
+                </div>
+                <img src="ccaattlloovvee.jpeg" class="top-img">
+            </div>
+
+            <!-- Account Settings Card -->
+            <div class="card fade">
+                <h3>Account Settings</h3>
+                <div class="account-section">
+                    <div class="profile-upload">
+                        <div class="avatar-large" id="mainAvatar">M</div>
+                        <label class="upload-btn">
+                            <input type="file" id="uploadInput" hidden>
+                            📷
+                        </label>
+                        <small>JPG, PNG or GIF. Max 2MB</small>
+                    </div>
+                    <div class="form-grid">
+                        <input id="userName" type="text" placeholder="Your Name">
+                        <input id="userEmail" type="email" placeholder="Your Email">
+                        <button class="save-btn">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preferences Card -->
+            <div class="card fade">
+                <h3>Preferences</h3>
+                <p class="sub-text">Customize your experience.</p>
+
+                <div class="setting-row">
+                    <div>
+                        <strong>Text Size</strong><br>
+                        <small>Adjust the font size of the website</small>
+                    </div>
+                    <select id="fontSizeSelect" class="styled-select">
+                        <option value="14px">Small</option>
+                        <option value="16px" selected>Medium</option>
+                        <option value="18px">Large</option>
+                    </select>
+                </div>
+
+                <div class="setting-row">
+                    <div>
+                        <strong>Animations</strong><br>
+                        <small>Enable smooth visual effects</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="animToggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="setting-row">
+                    <div>
+                        <strong>Sound Effects</strong><br>
+                        <small>Play a sound on button clicks</small>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="soundToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+  <div class="footer-left">
+    <p>Follow Us</p>
+    <p>
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="mailto:hello@secondchance.com">Email</a>
+    </p>
+  </div>
+
+</div>
+
+  <div class="footer-right">
+    <p> © Project Second Chance</p>
+  </div>
+</footer>
+    <script src="settings.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

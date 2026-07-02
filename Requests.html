@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Adoption Requests</title>
+
+<link rel="stylesheet" href="Requests.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+     <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<div class="container">
+
+  <h1>Adoption Requests</h1>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Total Requests</h3>
+      <p id="total">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Pending</h3>
+      <p id="pending">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Approved</h3>
+      <p id="approved">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Declined</h3>
+      <p id="declined">0</p>
+    </div>
+
+  </div>
+
+  <div class="table-box">
+    <table>
+      <thead>
+        <tr>
+          <th>Applicant</th>
+          <th>Pet</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody id="requestsTable"></tbody>
+
+    </table>
+  </div>
+
+</div>
+<footer class="footer">
+  <div class="footer-left">
+    <p>Follow Us</p>
+    <p>
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="mailto:hello@secondchance.com">Email</a>
+    </p>
+  </div>
+
+</div>
+
+  <div class="footer-right">
+    <p> © Project Second Chance</p>
+  </div>
+</footer>
+<script src="Requests.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

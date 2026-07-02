@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saved Pets</title>
+  
+  <link rel="stylesheet" href="saved.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<main class="main-content">
+  <div id="petsContainer" style="display: grid;"></div>
+
+  <section id="emptyState" class="empty-wrapper" style="display: none;">
+    <div class="card">
+
+      <div class="icon">
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
+          <path d="M12 14c-2 0-4 2-4 3.5S10 20 12 20s4-1 4-2.5S14 14 12 14Z" fill="#2f8f87"/>
+          <circle cx="6" cy="10" r="2" fill="#2f8f87"/>
+          <circle cx="18" cy="10" r="2" fill="#2f8f87"/>
+          <circle cx="9" cy="6" r="2" fill="#2f8f87"/>
+          <circle cx="15" cy="6" r="2" fill="#2f8f87"/>
+        </svg>
+      </div>
+
+      <h1>No Saved Pets Yet</h1>
+      <p>Start exploring and save your favorite pets. Your future companion is waiting.</p>
+
+      <button onclick="window.location.href='rescue.html'">
+        Find a Pet
+      </button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    <p>Follow Us</p>
+    <p>
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="mailto:hello@secondchance.com">Email</a>
+    </p>
+  </div>
+
+  <div class="footer-right">
+    <p> © Project Second Chance</p>
+  </div>
+</footer>
+
+<script src="saved.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+

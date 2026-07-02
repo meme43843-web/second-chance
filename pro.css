@@ -1,0 +1,424 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#f2f7f6;
+}
+
+/* ===== NAVBAR ===== */
+
+.main-header{
+background:#ffffff;
+padding:15px 40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo img{
+height:80px;
+}
+
+.nav{
+display:flex;
+align-items:center;
+gap:18px;   /* تم تقليل المسافة بين الروابط */
+}
+
+.nav a{
+text-decoration:none;
+color:#1f6f78;
+font-weight:600;
+transition:.3s;
+margin-left:0;   /* منع التباعد الزائد */
+}
+
+.nav a:hover{
+color:#3baea0;
+}
+
+/* ===== PROFILE HERO ===== */
+
+.profile-hero{
+min-height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#e6f4f1,#f8fcfb);
+padding:40px;
+}
+
+.profile-card{
+background:white;
+padding:50px;
+width:420px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 30px 60px rgba(31,111,120,0.15);
+position:relative;
+overflow:hidden;
+}
+
+/* subtle glow */
+.profile-card::before{
+content:"";
+position:absolute;
+top:-100px;
+right:-100px;
+width:250px;
+height:250px;
+background:radial-gradient(circle,#3baea0 0%,transparent 70%);
+opacity:.15;
+}
+
+/* ===== AVATAR ===== */
+
+.avatar{
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-weight:bold;
+}
+
+.avatar.big{
+width:130px;
+height:130px;
+font-size:50px;
+margin:0 auto 20px;
+background:linear-gradient(135deg,#1f6f78,#3baea0);
+box-shadow:0 15px 30px rgba(59,174,160,0.4);
+}
+
+/* ===== NAME ===== */
+
+#name{
+color:#1f6f78;
+margin-bottom:8px;
+}
+
+#email{
+color:#777;
+margin-bottom:30px;
+}
+
+/* ===== STATS ===== */
+
+.stats{
+display:flex;
+justify-content:space-between;
+margin-bottom:30px;
+}
+
+.stat-box{
+background:#f3fafa;
+padding:20px;
+border-radius:20px;
+width:45%;
+transition:.3s;
+}
+
+.stat-box:hover{
+transform:translateY(-5px);
+background:#e6f4f1;
+}
+
+.stat-box span{
+display:block;
+font-size:30px;
+font-weight:bold;
+color:#1f6f78;
+margin-bottom:5px;
+}
+
+/* ===== BUTTON ===== */
+
+.edit-btn{
+border:none;
+padding:14px 35px;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+color:white;
+background:linear-gradient(135deg,#1f6f78,#3baea0);
+transition:.3s;
+box-shadow:0 10px 25px rgba(31,111,120,.3);
+}
+
+.edit-btn:hover{
+transform:scale(1.05);
+box-shadow:0 15px 35px rgba(31,111,120,.5);
+}
+
+
+
+
+
+.header {
+background:#ffffff;
+padding:15px 40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo img {
+height:100px;
+}
+
+.nav a {
+margin-left:0; /* إزالة المسافة الزائدة */
+text-decoration:none;
+color:#2b7a78;
+font-weight:bold;
+}
+
+
+
+
+.footer {
+background:#ffffff;
+padding:40px 45px;
+display:flex;
+justify-content:space-between;
+font-size:14px;
+}
+
+.footer-left a {
+text-decoration:none;
+color:#3aafa9;
+font-weight:bold;
+}
+
+.nav a {
+transition:0.2s;
+}
+
+.nav a:hover {
+color:#3aa6a0;
+}
+
+
+
+
+.user-area {
+position:relative;
+display:flex;
+align-items:center;
+gap:15px;
+margin-left:15px;
+}
+
+/* Avatar */
+
+.avatar {
+width:40px;
+height:40px;
+background-color:#1f6f5c;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.avatar:hover {
+transform:scale(1.08);
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+
+/* Dropdown */
+
+.dropdown {
+position:absolute;
+top:55px;
+right:0;
+width:200px;
+background:white;
+border-radius:18px;
+box-shadow:0 25px 60px rgba(0,0,0,.18);
+display:none;
+flex-direction:column;
+padding:14px;
+z-index:9999;
+backdrop-filter:blur(10px);
+animation:fadeMenu .25s ease;
+}
+
+.dropdown a {
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px 14px;
+text-decoration:none;
+color:#333;
+border-radius:12px;
+transition:.25s;
+font-size:14px;
+font-weight:500;
+}
+
+.dropdown a:hover {
+background:#eef6f6;
+color:#2b7a78;
+transform:translateX(3px);
+}
+
+.dropdown hr {
+border:none;
+height:1px;
+background:#eee;
+margin:8px 0;
+}
+
+.logout {
+color:#c0392b;
+}
+
+.dropdown::before {
+content:"";
+position:absolute;
+top:-6px;
+right:18px;
+width:12px;
+height:12px;
+background:#fff;
+transform:rotate(45deg);
+box-shadow:-3px -3px 10px rgba(0,0,0,.05);
+}
+
+@keyframes fadeMenu {
+from { opacity:0; transform:translateY(-8px); }
+to { opacity:1; transform:translateY(0); }
+}
+
+.nav{
+display:flex;
+align-items:center;
+gap:18px;
+margin-right:25px; /* يبعد القائمة عن الحافة */
+}
+
+.user-area{
+position:relative;
+display:flex;
+align-items:center;
+gap:8px;
+margin-left:5px;
+margin-right:20px; /* يبعد الأفاتار عن الحافة */
+}
+.avatar.big img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+}
+
+.avatar.big img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+}
+
+#avatarLetter img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+}
+.delete-photo{
+margin-top:8px;
+border:none;
+background:#f1f1f1;
+border-radius:50%;
+width:32px;
+height:32px;
+cursor:pointer;
+font-size:16px;
+transition:0.2s;
+}
+
+.delete-photo:hover{
+background:#ff4d4d;
+color:white;
+transform:scale(1.1);
+}
+
+.avatar-container{
+position:relative;
+width:120px;
+margin:auto;
+}
+
+.delete-photo{
+position:absolute;
+bottom:0;
+right:0;
+border:none;
+background:#ff4d4d;
+color:white;
+width:32px;
+height:32px;
+border-radius:50%;
+cursor:pointer;
+font-size:16px;
+display:none;
+transition:0.2s;
+}
+
+.avatar-container:hover .delete-photo{
+display:block;
+}
+
+.delete-photo:hover{
+transform:scale(1.15);
+}
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.4);
+display:none;
+align-items:center;
+justify-content:center;
+}
+
+.popup-box{
+background:white;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.popup-box button{
+margin:10px;
+padding:8px 16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+#confirmDelete{
+background:#ff4d4d;
+color:white;
+}
+
+#cancelDelete{
+background:#ddd;
+}

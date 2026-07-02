@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rescue Story | Second Chance</title>
+  
+  <link rel="stylesheet" href="story.css">
+  
+  
+
+</head>
+<div id="loginModal" class="modal">
+  <div class="modal-box">
+    <h2>Login Required</h2>
+    <p>Please login to continue.</p>
+  
+    <input type="email" id="modalEmail" placeholder="Email">
+    <input type="password" id="modalPassword" placeholder="Password">
+
+    <button onclick="loginFromModal()">Login</button>
+    <button class="close" onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<body>
+
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+
+<main class="story-page container">
+
+  <div class="back-btn">
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <h1 id="title">Rescue Story</h1>
+  <p class="subtitle">Every animal deserves a second chance</p>
+
+  <div class="image-box">
+    <img id="petImage" alt="">
+  </div>
+
+  
+  <section class="stages">
+
+    <div class="stage-box">
+      <div class="stage-header">
+        <img src="rescue.png" alt="">
+        <h3>Rescue</h3>
+      </div>
+      <p id="rescue"></p>
+    </div>
+
+    <div class="stage-box">
+      <div class="stage-header">
+        <img src="medical.png" alt="">
+        <h3>Medical Care</h3>
+      </div>
+      <p id="medical"></p>
+    </div>
+
+    <div class="stage-box">
+      <div class="stage-header">
+        <img src="recovery.png" alt="">
+        <h3>Recovery</h3>
+      </div>
+      <p id="recovery"></p>
+    </div>
+
+    <div class="stage-box">
+      <div class="stage-header">
+        <img src="adoption.png" alt="">
+        <h3>Ready for Adoption</h3>
+      </div>
+      <p id="adoption"></p>
+    </div>
+
+  </section>
+
+  
+  <section class="story-text">
+    <h2>Full Story</h2>
+    <p id="story"></p>
+  </section>
+
+  
+  <div class="actions">
+    <button onclick="requireLogin()">♡ Save</button>
+<button onclick="handleShare()">⤴ Share</button>
+<button onclick="handleMessage()">✉ Message</button>
+  </div>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container footer-content">
+
+    <div class="follow">
+      <p>Follow Us</p>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Email</a>
+    </div>
+
+    <p class="copy">© Project Second Chance</p>
+    
+ 
+  </div>
+</footer>
+
+<script src="auth.js"></script>
+<script src="script.js"></script>
+<script src="story.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+

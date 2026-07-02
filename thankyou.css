@@ -1,0 +1,98 @@
+body{
+  margin:0;
+  font-family:"Segoe UI",sans-serif;
+}
+
+.bg{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(145deg,#e6f5f3,#cfe9e6);
+}
+
+.card{
+  background:white;
+  padding:50px 40px;
+  border-radius:30px;
+  text-align:center;
+  width:350px;
+  box-shadow:0 20px 50px rgba(0,0,0,.1);
+  animation:fadeUp .6s ease;
+}
+
+.icon{
+  width:80px;
+  height:80px;
+  background:#3aafa9;
+  color:white;
+  font-size:40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+  margin:0 auto 20px;
+  box-shadow:0 10px 25px rgba(58,175,169,.3);
+}
+
+h1{
+  color:#2b7a78;
+  margin-bottom:10px;
+}
+
+p{
+  color:#555;
+  font-size:14px;
+  margin-bottom:25px;
+}
+
+.pets{
+  width:180px;
+  margin-bottom:20px;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,#3aafa9,#2b7a78);
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  transform:translateY(-3px);
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+
+.icon{
+  width:80px;
+  height:80px;
+  background:#3aafa9;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+  margin:0 auto 20px;
+  box-shadow:0 10px 25px rgba(58,175,169,.3);
+}
+
+.icon svg{
+  width:60px;
+  height:60px;
+}
+
+.heart-icon{
+  display:inline-flex;
+  vertical-align:middle;
+  margin-left:4px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pet Story</title>
+<link rel="stylesheet" href="animal-details.css">
+</head>
+
+<body>
+
+<div class="story-container">
+  <img id="petImg">
+  <h1 id="petName"></h1>
+  <p id="petStory"></p>
+
+  <button onclick="goBack()">← Back</button>
+</div>
+
+<script>
+const pet = JSON.parse(localStorage.getItem("selectedPet"));
+
+if(!pet){
+  document.body.innerHTML = "<h2>No pet selected 😭</h2>";
+}
+
+document.getElementById("petName").textContent = pet.name;
+document.getElementById("petImg").src = pet.img;
+
+function generateStory(profile){
+  if(profile.energy === "high" && profile.bond === "attached"){
+    return "Loves adventures, running freely, and forming deep emotional bonds. Always by your side.";
+  }
+
+  if(profile.energy === "low"){
+    return "Calm, peaceful, and perfect for quiet homes. Loves relaxing and soft companionship.";
+  }
+
+  if(profile.bond === "independent"){
+    return "Enjoys personal space but still brings comfort. A quiet soul with a gentle presence.";
+  }
+
+  return "A balanced personality — playful yet calm, social yet independent.";
+}
+
+document.getElementById("petStory").textContent = generateStory(pet.profile);
+</script>
+
+<script src="animal-details.js"></script>
+
+</body>
+</html>

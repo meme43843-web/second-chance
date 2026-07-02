@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Edit Profile</title>
+
+<link rel="stylesheet" href="edit-profile.css">
+</head>
+
+<body>
+
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+     <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a class="active" href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+
+<div class="page">
+
+<a href="profile.html" class="back-btn">← Back</a>
+
+<div class="container">
+
+<div class="profile-pic">
+
+<img id="profileImage" src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+
+<input type="file" id="imageUpload">
+
+</div>
+
+
+<h2>Edit Profile</h2>
+
+
+<form id="profileForm">
+
+<label>Username</label>
+<input type="text" placeholder="Enter your username" required>
+
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+
+<label>Password</label>
+<input type="password" placeholder="Enter new password">
+
+
+<button type="submit" class="submit-btn">
+Save Changes
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="edit-profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Profile</title>
+
+<link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav class="nav">
+    <a class="active" href="index.html">Home</a>
+    <a href="rescue.html">Rescue Stories</a>
+    <a href="smart.html">Adopt</a>
+    <a href="about.html">About</a>
+
+    <div class="user-area">
+      <a href="Login.html" id="loginBtn">Login</a>
+
+      <div class="profile" id="profileBox" style="display: none;">
+        <div class="avatar" id="avatarLetter"></div>
+
+        <div class="dropdown" id="dropdownMenu">
+          <a href="profile.html">My Profile</a>
+          <a href="saved.html">Saved Pets</a>
+          <a href="Requests.html">Adoption Requests</a>
+          <a href="settings.html">Settings</a>
+          <hr>
+          <a href="#" id="logoutBtn" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<section class="profile-hero">
+  <div class="profile-card">
+
+<div class="avatar-container">
+
+<div class="avatar big" id="avatar">M</div>
+
+<button id="removePhoto" class="delete-photo">🗑</button>
+
+</div>
+
+<input type="file" id="uploadImage" accept="image/*" style="display:none">
+    <h2 id="name">Username</h2>
+    <p id="email">email@mail.com</p>
+
+    <div class="stats">
+      <div class="stat-box">
+        <span id="savedCount">0</span>
+        <p>Saved Pets</p>
+      </div>
+
+      <div class="stat-box">
+        <span id="requestCount">0</span>
+        <p>Requests</p>
+      </div>
+    </div>
+
+    <a href="edit-profile.html">
+<button class="edit-btn">Edit Profile</button>
+</a>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-left">
+    <p>Follow Us</p>
+    <p>
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="mailto:hello@secondchance.com">Email</a>
+    </p>
+  </div>
+
+</div>
+
+  <div class="footer-right">
+    <p> © Project Second Chance</p>
+  </div>
+</footer>
+
+<script src="profile.js"></script>
+<script src="script.js"></script>
+
+
+<div id="deletePopup" class="popup">
+
+<div class="popup-box">
+
+<p>Delete profile photo?</p>
+
+<button id="confirmDelete">Delete</button>
+<button id="cancelDelete">Cancel</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
